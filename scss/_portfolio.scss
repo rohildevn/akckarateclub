@@ -48,13 +48,14 @@
 
 .projects_item {
   position: relative;
-  border-radius: 5px;
+  border-radius: 25px;
   overflow: hidden;
   margin-bottom: 30px;
   &:before {
     content: "";
-    background: #000;
+    background: #ffeb3d;
     position: absolute;
+    border-radius: 25px;
     left: 0px;
     top: 0px;
     width: 100%;

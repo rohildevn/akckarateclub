@@ -458,12 +458,12 @@ button:focus {
 
 .projects_item {
   position: relative;
-  border-radius: 5px;
+  border-radius: 25px;
   overflow: hidden;
   margin-bottom: 30px; }
   .projects_item:before {
     content: "";
-    background: #000;
+    background: #ffeb3d;
     position: absolute;
     left: 0px;
     top: 0px;

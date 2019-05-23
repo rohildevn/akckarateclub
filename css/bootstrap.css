@@ -512,7 +512,9 @@ mark {
 
 .img-fluid {
     max-width: 100%;
+    border-radius:25px;
     height: auto
+
 }
 
 .img-thumbnail {
