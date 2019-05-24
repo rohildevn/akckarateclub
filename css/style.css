@@ -1319,14 +1319,14 @@ button:focus {
     .contact_form .form-group textarea.form-control {
       height: 134px; }
 .contact_form .primary-btn {
-  background: #e45447;
-  color: #fff;
+  background: #ffeb3d;
+  color: #000;
   margin-top: 20px;
-  border: 2px solid #e45447; }
+  border: 2px solid #ffeb3d; }
   .contact_form .primary-btn:hover {
-    color: #000;
-    border: 2px solid #90acd1;
-    background: transparent; }
+    color: #fff;
+    border: 2px solid #232323;
+    background: #232323; }
 
 /* Contact Success and error Area css
 ============================================================================================ */
