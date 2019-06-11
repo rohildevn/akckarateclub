@@ -314,26 +314,30 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .banner-area .single_slide_banner {
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover;}
 .banner-area .slide_bg1 {
   background: url(../img/banner/banner-bg1.jpg);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+background-size: cover;}
 .banner-area .slide_bg2 {
   background: url(../img/banner/banner-bg2.jpg);
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+background-size: cover;}
 .banner-area .slide_bg3 {
   background: url(../img/banner/banner-bg3.jpg);
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+background-size: cover;}
 @media (max-width: 991px) {
   .banner-area .fullscreen {
     height: 600px !important; } }
 
 .banner-content {
-  text-align: left; }
+  text-align: left;
+  margin-left: -20%}
   @media (max-width: 1680px) {
     .banner-content {
-      text-align: center; } }
+      text-align: left; } }
   @media (max-width: 680px) {
     .banner-content {
       padding: 48px 20px;
@@ -379,24 +383,50 @@ button:focus {
     background-image: url(../img/banner/common-banner.jpg);
     background-size: cover;
     z-index: 1; }
+    .banner_area .banner_inner1 {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      min-height: 400px;
+      background-image: url(../img/banner/common-banner1.jpg);
+      background-size: cover;
+      z-index: 1; }
     .banner_area .banner_inner .banner_content h1 {
       color: #fff;
       font-size: 60px;
       margin-bottom: 20px;
       text-transform: capitalize;
       font-weight: 700; }
+      .banner_area .banner_inner1 .banner_content h1 {
+        color: #fff;
+        font-size: 60px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        font-weight: 700; }
     .banner_area .banner_inner .banner_content .page_link {
       display: inline-block;
       border: 2px solid #fff;
       border-radius: 50px;
       padding: 0px 20px;
       line-height: 46px; }
+      .banner_area .banner_inner1 .banner_content .page_link {
+        display: inline-block;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        padding: 0px 20px;
+        line-height: 46px; }
       .banner_area .banner_inner .banner_content .page_link a {
         font-size: 14px;
         color: #fff;
         font-family: "Roboto", sans-serif;
         margin-right: 14px;
         position: relative; }
+        .banner_area .banner_inner1 .banner_content .page_link a {
+          font-size: 14px;
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          margin-right: 14px;
+          position: relative; }
         .banner_area .banner_inner .banner_content .page_link a:before {
           position: absolute;
           content: "";
@@ -410,6 +440,19 @@ button:focus {
           -ms-transform: translateY(-50%);
           -o-transform: translateY(-50%);
           transform: translateY(-50%); }
+          .banner_area .banner_inner1 .banner_content .page_link a:before {
+            position: absolute;
+            content: "";
+            height: 200%;
+            width: 1px;
+            right: -10px;
+            top: 54%;
+            background: #fff;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%); }
         .banner_area .banner_inner .banner_content .page_link a:last-child {
           margin-right: 0px; }
           .banner_area .banner_inner .banner_content .page_link a:last-child:before {
@@ -1294,7 +1337,7 @@ button:focus {
     padding: 2px 0px; }
 
 .contact_form .form-group {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;}
   .contact_form .form-group .form-control {
     font-size: 13px;
     line-height: 26px;
@@ -1997,10 +2040,11 @@ h6 {
 .single-input {
   display: block;
   width: 100%;
-  line-height: 40px;
+  line-height: 60px;
   border: none;
   outline: none;
-  background: #f9f9ff;
+  border-radius: 25px;
+  background: #f2f2f2;
   padding: 0 20px; }
 
 .single-input:focus {
@@ -2039,7 +2083,7 @@ h6 {
 .single-input-primary {
   display: block;
   width: 100%;
-  line-height: 40px;
+  line-height: 60px;
   border: 1px solid transparent;
   outline: none;
   background: #f9f9ff;
@@ -2052,7 +2096,7 @@ h6 {
 .single-input-accent {
   display: block;
   width: 100%;
-  line-height: 40px;
+  line-height: 60px;
   border: 1px solid transparent;
   outline: none;
   background: #f9f9ff;
@@ -2065,7 +2109,7 @@ h6 {
 .single-input-secondary {
   display: block;
   width: 100%;
-  line-height: 40px;
+  line-height: 60px;
   border: 1px solid transparent;
   outline: none;
   background: #f9f9ff;
@@ -2521,16 +2565,17 @@ h6 {
     margin-top: 20px; } }
 .form-select {
   height: 40px;
-  width: 100%; }
+  width: 100%;
+  text-align: left;}
 
 .form-select .nice-select {
   border: none;
-  border-radius: 0px;
-  height: 40px;
-  background: #f9f9ff !important;
+  border-radius: 25px;
+  height: 60px;
+  background: #f2f2f2 !important;
   padding-left: 45px;
   padding-right: 40px;
-  width: 100%; }
+  width: 100%;}
 
 .form-select .nice-select .list {
   margin-top: 0;
@@ -2538,7 +2583,7 @@ h6 {
   border-radius: 0px;
   box-shadow: none;
   width: 100%;
-  padding: 10px 0 10px 0px; }
+  padding: 10px 0 10px 0px;}
 
 .mt-10 {
   margin-top: 10px; }
