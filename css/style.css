@@ -334,7 +334,7 @@ background-size: cover;}
 
 .banner-content {
   text-align: left;
-  margin-left: -20%}
+  }
   @media (max-width: 1680px) {
     .banner-content {
       text-align: left; } }
@@ -1972,8 +1972,8 @@ h6 {
   margin-top: 30px;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  background-size: cover !important;
-  height: 600px;
+  background-size: contain !important;
+  height: 400px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
